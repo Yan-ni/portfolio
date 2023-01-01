@@ -1,0 +1,63 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 35px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .logo a {
+    color: var(--text-color);
+    font-family: var(--ff-bebas);
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+  
+  nav a {
+    text-transform: uppercase;
+    font-family: var(--ff-bebas);
+    font-size: 1.5rem;
+  }
+  
+  nav a:hover {
+    color: var(--green-color-hover);
+    transition: color 300ms ease-out;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 6rem;
+    
+    li {
+      width: max-content;
+      height: max-content;
+    }
+
+    .github, .linkedin {
+      width: 1.875rem;
+      aspect-ratio: 1;
+    }
+
+    li:hover path {
+      fill: var(--green-color-hover);
+      transition: fill 300ms ease;  
+    }
+  }
+}

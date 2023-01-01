@@ -1,0 +1,61 @@
+section.contact {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .content {
+    margin: 50px 0;
+  
+    p {
+      font-family: var(--ff-poppins);
+      color: var(--text-secondary-color);
+      line-height: 2rem;
+      
+      a {
+        color: var(--green-color);
+        text-decoration: underline;
+
+        &:hover {
+          color: var(--green-color-hover);
+          transition: color 300ms ease;
+        }
+      }
+    }
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  
+    label {
+      font-family: var(--ff-poppins);
+      font-size: 1.25rem;
+      font-weight: 500;
+      padding-bottom: 0.3rem;
+    }
+    
+    .input-group:nth-child(3) {
+      grid-column: span 2;
+    }
+    
+    button {
+      width: fit-content;
+      background-color: var(--green-color);
+      border: unset;
+      border-radius: 4px;
+      color: var(--bg-color);
+      font-family: var(--ff-poppins);
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+    
+      &:hover {
+        background-color: var(--green-color-hover);
+      }
+    }
+  }
+}

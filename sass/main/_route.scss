@@ -1,0 +1,83 @@
+section.route {
+  .timeline {
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border-radius: 50vw;
+      transform: translateX(-50%);
+      background-color: var(--bg-alt-lighter-color);
+    }
+
+    .year-2022 {
+      top: calc(60px + 0px + 0px);
+    }
+
+    .year-2021 {
+      top: calc(60px + 30px + 150px);
+    }
+
+    .year-2020 {
+      top: calc(60px + 60px + 300px);
+    }
+
+    .pop {
+      width: 30px;
+      aspect-ratio: 1;
+      background-color: var(--bg-alt-lighter-color);
+      border-radius: 50vw;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+
+      &.left .content {
+        left: -10px;
+        transform: translateX(-100%);
+        &::after {
+          transform: rotate(45deg);
+          right: -5px;
+        }
+      }
+      
+      &.right .content {
+        right: -10px;
+        transform: translateX(100%);
+        &::after {
+          transform: rotate(45deg);
+          left: -5px;
+        }
+      }
+
+      .content {
+        position: absolute;
+        top: calc(50% - 25px);
+        background-color: inherit;
+        padding: 1.5rem;
+        border-radius: 10px;
+        width: max-content;
+
+        max-width: 400px;
+
+        &::after {
+          content: "";
+          width: 10px;
+          aspect-ratio: 1;
+          background-color: inherit;
+          position: absolute;
+          top: 19px;
+        }
+
+        p {
+          font-family: var(--ff-poppins);
+        }
+      }
+    }
+  }
+}
