@@ -22,11 +22,12 @@
 }
 
 :focus, :-moz-focusring {
-  outline: 2px solid var(--green-color);
+  outline: 2px solid var(--green-color) !important;
+  outline-color: var(--green-color) !important;
 }
 
 * {
-  outline-color: var(--green-color);
+  outline-color: var(--green-color) !important;
 }
 
 *, *::after, *::before {
@@ -291,4 +292,24 @@ footer {
       margin: 25px 0;
     }
   }
+}
+
+.popup {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  font-family: var(--ff-poppins) !important;
+}
+
+.popup-button {
+  background-color: var(--green-color) !important;
+  color: var(--bg-color) !important;
+  font-weight: 600 !important;
+}
+
+.swal2-success-ring {
+  border-color: #03d36b8e !important;
+}
+
+[class^="swal2-success-line"] {
+  background-color: var(--green-color) !important;
 }
